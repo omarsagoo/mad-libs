@@ -1,3 +1,5 @@
+import random
+
 def actionStory():
     nouns = list()
     adjectives = list()
@@ -25,11 +27,14 @@ def actionStory():
     print('Now lastly give me some names for the charecters. 5 names would be great!')
     for newName in range(5):
         names.append(input())
+
+    randomizedProfessionals(names, professions)
     
     
 
-def professionals(names, professions):
-    
+def randomizedProfessionals(names, professions):
+    random.shuffle(names)
+    random.shuffle(professions)
 
 
 print('Hello! What is your name?')
