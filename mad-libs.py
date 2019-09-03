@@ -1,7 +1,7 @@
 from random import shuffle
 
 
-def actionStory():
+def action_story():
     nouns = list()
     adjectives = list()
     verbs = list()
@@ -11,19 +11,19 @@ def actionStory():
     print('So let\'s start!')
     
     print('Let\'s make a list of 3 nouns to use in the story, they can be anything but let\'s try to make them action related.')
-    userInput(nouns, 3)
+    user_input(nouns, 3)
    
     print('Good! now we need to create some adjectives! give me 5 Adjectives to use in the story.')
-    userInput(adjectives, 5)
+    user_input(adjectives, 5)
    
     print('Just a few more steps! let\'s now list out some verbs to use!')
-    userInput(verbs, 3)
+    user_input(verbs, 3)
     
     print('Now give me 2 professions.')
-    userInput(professions, 2)
+    user_input(professions, 2)
     
     print('Now lastly give me some names for the charecters. 2 names would be great!')
-    userInput(names, 2)
+    user_input(names, 2)
    
     randomize(names)
     randomize(professions)
@@ -41,7 +41,7 @@ def randomize(raw_lists):
     shuffle(raw_lists)
 
 #function for collecting user input and storing it in the variable
-def userInput(pos, x):
+def user_input(pos, x):
     for _ in range(x):
         pos.append(input('-->'))
 
@@ -49,4 +49,4 @@ def userInput(pos, x):
 print('Hello! What is your name?')
 name = input('-->')
 print('It is so nice to meet you ' + name + '! Lets make an action story!')
-actionStory()
+action_story()
